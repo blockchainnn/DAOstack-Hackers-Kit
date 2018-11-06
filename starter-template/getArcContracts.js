@@ -19,6 +19,10 @@ files.filter(file => {
     console.log(`  Live: ${abi.networks["1"].address}`);
     arcJSON += `"live": ` + `"${abi.networks["1"].address}", `;
   }
+  if (abi.networks["3"]) {
+      console.log(`  Ropsten: ${abi.networks["3"].address}`);
+      arcJSON += `"ropsten": ` + `"${abi.networks["3"].address}", `;
+  }
   if (abi.networks["42"]) {
     console.log(`  Kovan: ${abi.networks["42"].address}`);
     arcJSON += `"kovan": ` + `"${abi.networks["42"].address}", `;
