@@ -1,5 +1,5 @@
+const keys = require('../keys/keys');
 // 2_deploy_dao.js
-
 var arcContracts = require("../arc.json");
 
 var Avatar = artifacts.require("@daostack/arc/Avatar.sol");
@@ -16,12 +16,12 @@ const tokenName = "HACKATHON";
 const tokenSymbol = "HCKR";
 // The ethereum addresses of the "founders"
 // TODO: list your accounts to give initial reputation to
-var founders = ['0x422c7985AbB4D4c49F9AC76F00F893F3067D5eeA'];
+var founders = [keys.ADDRESS];
 // TODO: list the token amount per founder account
 // NOTE: the important thing is to make sure the array length match the number of founders
 var foundersTokens = [1000000000];
 // TODO: list the reputation amount per founder account
-var foundersRep = [100];
+var foundersRep = [1000000000];
 
 module.exports = async function(deployer) {
 	deployer.then(async function() {

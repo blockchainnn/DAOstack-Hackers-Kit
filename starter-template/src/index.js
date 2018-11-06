@@ -23,7 +23,6 @@ async function initialize() {
 
 	// These are some basic configurations, feel free to edit as you need.
 	// Learn more about the Arc.js configurations here: https://daostack.github.io/arc.js/Configuration/
-
 	ConfigService.set("estimateGas", true);
 	ConfigService.set("txDepthRequiredForConfirmation", {
 		kovan: 0,
