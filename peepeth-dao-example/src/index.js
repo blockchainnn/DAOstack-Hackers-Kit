@@ -58,6 +58,7 @@ async function initialize() {
 
   console.log("BinaryVoteResult " + BinaryVoteResult.No);
 
+
   LoggingService.logLevel = LogLevel.all; // Remove or modify to change ArcJS logging
 
   AccountService.subscribeToAccountChanges(() => {
